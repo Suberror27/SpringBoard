@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selects & Text Areas</title>
+</head>
+<body>
+     <h1>Forms Demo</h1>
+
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name" minlength="3" maxlength="20">
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required placeholder="Enter your password" minlength="8" maxlength="20">
+        <br><br>
+
+        <p>Are you over 18 years old?</p>
+        <label for="over18">Yes</label>
+        <input type="checkbox" id="over18" name="over18" required>
+        <label for="under18">No</label>
+        <input type="checkbox" id="under18" name="under18">
+        <br><br>
+
+        <p>Select bycicle type:</p>
+        <input type="radio" name="byke-type" id="byke1" value="scooty">Scooty</input>
+        <input type="radio" name="byke-type" id="byke2" value="bike">Bike</input>
+        <input type="radio" name="byke-type" id="byke3" value="cycle">Cycle</input>
+        <br><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+
+    <h2>Other Input Types</h2>
+
+    <form>
+        <label for="color">Choose a color:</label>
+        <input type="color" id="color" name="color">
+        <br><br>
+
+        <label for="date">Select a date:</label>
+        <input type="date" id="date" name="date">
+        <br><br>
+
+        <label for="range">Select a range:</label>
+        <input type="range" id="range" name="range" min="1" max="100">
+        <br><br>
+
+        <label for="cars">Select a vehicule brand:</label>
+        <select name="cars" id="cars">
+            <option value="">--Select a brand--</option>
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+        </select>
+        <br><br>
+
+        <label for="textarea">Comments:</label>
+        <textarea id="textarea" name="textarea" rows="4" cols="50" placeholder="Enter your comments here..."></textarea>
+        <br><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
