@@ -1,0 +1,31 @@
+/* h2 {
+	color: greenyellow;
+	background-color: purple;
+} */
+
+html {
+	font-size: 1vw;
+}
+
+body {
+	/* background-color: rgb(119, 9, 236); */
+	background-color: #1bf79c50;
+}
+
+h1 {
+	/* background-color: rgba(187, 127, 251, 0.05); */
+	background-color: hsl(254, 95%, 57%);
+	color: hsl(434, 95%, 57%);
+	text-align: center;
+	font-weight: lighter;
+	letter-spacing: 1rem;
+	font-size: 5em;
+}
+
+p {
+	/* font-weight: bold;
+	line-height: 3;
+	word-spacing: 0.5rem;
+	text-indent: 10%; */
+	font-size: 3em;
+}
