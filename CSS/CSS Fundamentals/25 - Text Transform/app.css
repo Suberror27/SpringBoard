@@ -10,6 +10,7 @@ html {
 body {
 	/* background-color: rgb(119, 9, 236); */
 	background-color: #1bf79c50;
+	background: linear-gradient(-85deg, cyan, purple);
 }
 
 h1 {
