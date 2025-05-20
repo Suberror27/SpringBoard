@@ -1,0 +1,144 @@
+/* * {
+	text-decoration: underline magenta wavy;
+	border: 2px solid cyan;
+} */
+
+#logo {
+	width: 75px;
+}
+
+img {
+	width: 500px;
+}
+
+h1,
+a {
+	color: olive;
+}
+h1 {
+	font-size: 50px;
+}
+h2 {
+	color: teal;
+}
+
+.poem {
+	width: 500px;
+}
+
+nav a {
+	font-size: 1.5em;
+	color: steelblue;
+	text-decoration: none;
+}
+
+.poem p {
+	font-style: italic;
+	color: grey;
+}
+
+h2 + h3 {
+	color: orangered;
+}
+
+.poem + img {
+	width: 999px;
+}
+
+#works li {
+	font-size: 16px;
+}
+
+#works > li {
+	font-size: 1.5em;
+}
+
+.poem > p {
+	color: black;
+	font-style: normal;
+}
+
+/* Style applies to all anchor tags when hoverd */
+nav a:hover {
+	color: orangered;
+	font-size: 2rem;
+	text-decoration: underline;
+}
+
+/* This style applies to all input tags when focused (clicked on) */
+input:focus {
+	background-color: pink;
+}
+
+/* This styke applies to all first paragraph among their siblings that have a section parent inside of the poem class */
+.poem section p:first-of-type {
+	color: magenta;
+}
+
+/* This style applies to the last li tag among their siblings */
+li:last-of-type {
+	background-color: cyan;
+}
+
+/* This style applies to the every second li among their siblings inside of the nav element */
+nav li:nth-of-type(2n) {
+	background-color: lightpink;
+}
+
+/*  */
+nav li:nth-of-type(2n + 1) {
+	background-color: lavender;
+}
+
+
+.poem section p:first-of-type::first-letter {
+	font-size: 2em;
+}
+
+p::first-line {
+	color: yellowgreen;
+}
+
+input:focus::placeholder {
+	color: white;
+}
+
+input[type="text"] {
+	background-color: lightskyblue;
+}
+
+img[src*="unsplash"] {
+	width: 600px;
+}
+
+h3 {
+	color: cyan;
+}
+
+body section h2 + h3 {
+	color: orangered;
+}
+
+.poem h3 {
+	color: magenta;
+}
+
+.poem #author {
+	color: turquoise;
+}
+
+#author {
+	color: purple;
+}
+
+h3 {
+	color: blueviolet !important;
+}
+
+/* li a {
+	color: lightsalmon;
+}
+
+ul a {
+	color: greenyellow;
+} */
