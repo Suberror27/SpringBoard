@@ -1,0 +1,22 @@
+h1 {
+	text-align: center;
+	color: blueviolet;
+}
+
+h2 {
+	background-color: lightblue;
+	width: 50%;
+	text-align: center;
+}
+
+img {
+	/* border: groove 1rem red; */
+	border-width: 1rem;
+	border-style: groove dashed solid double;
+	border-color: red;
+	border-radius: 1rem;
+	width: 200px;
+	min-width: 150px;
+	max-width: 350px;
+}
+
