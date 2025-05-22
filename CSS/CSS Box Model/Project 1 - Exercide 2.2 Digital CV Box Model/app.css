@@ -1,0 +1,102 @@
+/* Apply box-sizing to all elements and set a default font */
+* {
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Set background gradient and base font size for the body */
+body {
+    background: linear-gradient(to right, #9bb3e4, #3721fb);
+    font-size: 1rem;
+    padding: 1rem;
+    border: groove 1rem black;
+}
+
+#profilePicture {
+    border-radius: 50%;
+    border: double 0.5rem black;
+    box-shadow: 2px 5px 5px;
+}
+
+#introMessageSection, #technicalSkillsSection, #professionalExperienceSection, #selectedProjectsSection, #certificationsSection, #educationSection, #footerSection {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Style all heading elements: color, margin, and text shadow */
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+    margin-bottom: -0.6rem;
+    text-shadow: 2px 2px 5px #FFFFFF;
+}
+
+/* Add negative margin to paragraphs inside divs */
+div p {
+    margin-bottom: -0.8rem;
+}
+
+/* Style table headers: background, text color, and padding */
+th {
+    background-color: #2b1bb8;
+    color: white;
+    padding: 10px;
+}
+
+/* Style table data cells: background, text color, and padding */
+td {
+    background-color: #141111;
+    color: white;
+    padding: 10px;
+}
+
+/* Style table captions: bold, larger font, and color */
+caption {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: black;
+    text-shadow: 2px 2px 5px #FFFFFF;
+}
+
+/* Remove underline from all links */
+a {
+    text-decoration: none;
+}
+
+/* Style forms: border, shadow, rounded corners, padding, width, and background */
+form {
+    border: 0.2rem solid black;
+    box-shadow: 1px 5px 9px #000;
+    border-radius: 15px;
+    padding: 1rem;
+    justify-self: center;
+    width: 30%;
+    background: linear-gradient(to right, #9bb3e4, #3721fb);
+}
+
+/* Style form labels: bold and larger font */
+form label {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Style form inputs and textareas: rounded corners, padding, shadow, border, and font size */
+form input[id="name"], input[id="email"], input[id="phone"], textarea[id="message"] {
+    border-radius: 15px;
+    padding: 0.2rem;
+    box-shadow: 1px 5px 9px #000;
+    border: 0.2rem solid black;
+    font-size: 1.2rem;
+    width: 75%;
+    outline: none;
+}
+
+/* Style form buttons: background, text color, padding, border, rounded corners, font size, and cursor */
+form button {
+    background-color: #2b1bb8;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
