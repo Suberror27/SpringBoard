@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+<head>
+  <title>Positions</title>
+  <style>
+
+    * {
+      z-index: 0;
+    }
+
+    h2 {
+      position: relative;
+      background-color: lightblue;
+      text-align: center;
+      width: 50%;
+      justify-self: center;
+      /* left: 100px; */
+    }
+
+    section {
+      padding: 1rem;
+      border: solid 0.2rem red;
+      margin: 1rem auto;
+      /* position: absolute;
+      left: 200px; */
+    }
+    nav {
+      width: 100%;
+      background-color: blue;
+      height: 2rem;
+      border-radius: 15px;
+      padding: 0.5rem;
+      line-height: 2rem;
+      display: flex;
+      justify-content: space-evenly;
+      position: sticky;
+      top: 1rem;
+      z-index: 1;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: black;
+      background-color: lightslategray;
+      width: 4rem;
+      text-align: center;
+      border-radius: 15px;
+    }
+
+    nav a:hover {
+      background-color: darkgrey;
+      color: #ffffff;
+    }
+
+    /* section {
+      background-color: lightpink;
+      border: solid 2px dotted;
+      height: 300px;
+      margin-bottom: 10px;
+      position: relative;
+    }
+
+    div {
+      width: 75px;
+      height: 75px;
+      margin-bottom: 10px;
+      background-color: lightgreen;
+      border: solid 1px black;
+    }
+
+    .r {
+      position: relative;
+      left: 50px;
+    }
+
+    .a {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+    }
+
+    .f {
+      position: fixed;
+      top: 90px;
+      left: 40px;
+    } */
+
+
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Test</a>
+    <a href="#">Info</a>
+    <a href="#">Media</a>
+  </nav>
+
+<section><h2>Static</h2>
+  <div class="s">S1</div>
+  <div class="s">S2</div>
+  <div class="s">S2</div>
+</section>
+
+<section><h2>Positioned</h2>
+  <div class="r">R1</div>
+  <div class="r">R2</div>
+  <div class="a">A</div>
+  <div class="f">F</div>
+</section>
+
+<section><h2>Static</h2>
+  <div class="s">S1</div>
+  <div class="s">S2</div>
+  <div class="s">S2</div>
+</section>
+
+<section><h2>Positioned</h2>
+  <div class="r">R1</div>
+  <div class="r">R2</div>
+  <div class="a">A</div>
+  <div class="f">F</div>
+</section>
+
+<section><h2>Static</h2>
+  <div class="s">S1</div>
+  <div class="s">S2</div>
+  <div class="s">S2</div>
+</section>
+
+<section><h2>Positioned</h2>
+  <div class="r">R1</div>
+  <div class="r">R2</div>
+  <div class="a">A</div>
+  <div class="f">F</div>
+</section>
+
+</body>
+</html>  
+
