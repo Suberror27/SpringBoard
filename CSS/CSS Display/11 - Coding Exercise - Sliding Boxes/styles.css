@@ -1,0 +1,104 @@
+body
+{
+  box-sizing: border-box;
+  background-color: black;
+}
+
+.red
+{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+.green
+{
+  width: 80px;
+  height: 80px;
+  background-color: green;
+}
+
+.blue
+{
+  width: 60px;
+  height: 60px;
+  background-color: blue;
+}
+
+.yellow
+{
+  width: 40px;
+  height: 40px;
+  background-color: yellow;
+}
+
+.exercise-1,
+.exercise-2,
+.exercise-3,
+.exercise-4
+{
+  position: relative;
+}
+
+.exercise-1 div,
+.exercise-2 div,
+.exercise-3 div,
+.exercise-4 div
+{
+  position: absolute;
+}
+
+/* Exercise 2 */
+
+.exercise-2
+{
+ top: 8rem;
+}
+
+.exercise-2 .green,
+.exercise-2 .blue,
+.exercise-2 .yellow
+{
+  top: 0.6rem;
+  right: 0.6rem;
+}
+
+/* Exercise 3 */
+
+.exercise-3
+{
+  top: 16rem;
+}
+
+.exercise-3 .green
+{
+  top: 0;
+  left: 0;
+  /* rotate: 180deg; */
+}
+
+.exercise-3 .blue,
+.exercise-3 .yellow
+{
+  /* Nothing was needed here if we use rotate 180deg:P */
+  bottom: 0;
+  right: 0;
+}
+
+/* Exercise 4 */
+
+.exercise-4
+{
+  top: 24rem;
+}
+
+.exercise-4 .blue
+{
+  position: relative;
+  left: 37.9rem;
+}
+
+.exercise-4 .yellow
+{
+  right: 0;
+}
