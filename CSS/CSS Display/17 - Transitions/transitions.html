@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+  <title>Transitions</title>
+  <style>
+
+    body {
+      background-color: teal;
+    }
+
+    h1 {
+      font-size: 20pt;
+      margin: 0;
+      transition: font-size 1.5s ease-in-out, color 1.5s ease-in-out;
+      color: darkblue;
+    }
+
+    h1:hover {
+      font-size: 50pt;
+      color: lightblue;
+    }
+
+    button{
+      background-color: brown;
+      border: 2pt solid white;
+      border-radius: 15px;
+      transition: 2s ease-in-out;
+    }
+
+    button:focus{
+      transform: translateX(30rem);
+    }
+
+    
+
+  </style>
+</head>
+
+<body>
+<h1>Our Title</h1>
+<button>Click Me!</button>
+</body>
+</html>  
