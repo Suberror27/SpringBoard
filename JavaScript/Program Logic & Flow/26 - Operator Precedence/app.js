@@ -25,6 +25,11 @@ console.log(result);
 
 // 1 + 5 = 6
 
+
+// According to PEMDAS, Division and Multiplication happens first evaluating from left to right
+// (9 / 3) + (2 * 4)
+// 3 + 8
+// 11
 const expression2 = (9 / 3) + (2 * 4);
 
 const result2 = expression2;
