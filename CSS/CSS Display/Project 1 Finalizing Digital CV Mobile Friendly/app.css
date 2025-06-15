@@ -40,9 +40,10 @@ head, main, footer {
 }
 
 #imageDiv {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: inline-block;
+    margin: 0 auto;
+    /* flex-direction: column;
+    align-items: center; */
 }
 
 #profilePicture {
