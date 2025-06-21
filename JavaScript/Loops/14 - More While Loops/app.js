@@ -10,4 +10,4 @@ while(guess !== target){
     target = Math.floor(Math.random() * 100);
 };
 
-console.log(`You got it! Your guess was ${guess} and the target was ${target}`);
+// console.log(`You got it! Your guess was ${guess} and the target was ${target}`);
