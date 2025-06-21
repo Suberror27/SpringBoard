@@ -1,5 +1,5 @@
-// const friend = "BRUTUS"
-const friend = "Abraham";
+const friend = "BRUTUS"
+// const friend = "Abraham";
 const shiftValue = 3;
 
 // ## Step 1 🧩 Recall the Latin alphabet variable from the previous exercise.
