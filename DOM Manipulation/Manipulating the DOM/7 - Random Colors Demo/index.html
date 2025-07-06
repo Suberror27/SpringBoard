@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Colors Demo</title>
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+        }
+
+        span {
+            font-size: 5.5rem;
+            font-family: Arial;
+            font-weight: 600;
+            transition: color 1s;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>HELLO WORLD</h1> -->
+     <div>
+        <span class="letter">H</span>
+        <span class="letter">E</span>
+        <span class="letter">L</span>
+        <span class="letter">L</span>
+        <span class="letter">O</span>
+        <span>&nbsp;</span>
+        <span class="letter">W</span>
+        <span class="letter">O</span>
+        <span class="letter">R</span>
+        <span class="letter">L</span>
+        <span class="letter">D</span>
+     </div>
+
+    <script>
+        function randomColor() {
+            const r = Math.floor(Math.random() * 255);
+            const g = Math.floor(Math.random() * 255);
+            const b = Math.floor(Math.random() * 255);
+            return `rgb(${r}, ${g}, ${b})`;
+        }
+
+        const words = document.querySelectorAll(".letter");
+        
+        setInterval(() => {
+            for(let letter of words) {
+                letter.style.color = randomColor();
+            }
+        }, 1000);
+
+    </script>
+</body>
+</html>
