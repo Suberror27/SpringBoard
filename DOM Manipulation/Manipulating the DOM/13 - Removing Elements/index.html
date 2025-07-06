@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Adding/Removing Elements</title>
+
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            padding: 5rem;
+        }
+        .todo {
+            font-size: 40px;
+            color: purple;
+        }
+
+        .todo:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+            transition: all 200ms;
+        }
+
+        .completed {
+            color: gray;
+            text-decoration: line-through;
+        }
+
+        #main-heading {
+            font-size: 80px;
+        }
+
+        .thumbnail {
+            width: 200px;
+        }
+
+        .image {
+            width: 15rem;
+            border-radius: 15px;
+        }
+    </style>
+
+</head>
+
+<body>
+  <h1 id="main-heading">Todo List</h1>
+  <ul>
+    <li class="todo">Feed Chickens</li>
+    <li class="todo">Gather Chicken Eggs</li>
+    <li id="remove-me">kajslkdlkasjdlksajldkjsla</li>
+    <li class="todo">Eat Chickens (just kidding)</li>
+    <li class="todo">Eat Chicken Eggs (not kidding)</li>
+  </ul>
+  <script>
+    const newTodo = document.createElement("li");
+    const ul = document.querySelector("ul");
+    const bTag = document.createElement("b");
+    const secondTodo = document.createElement("li");
+    const thirdTodo = document.createElement("li");
+    const newImage = document.createElement("img");
+    const body = document.querySelector("body");
+    // const deleteElement = document.getElementById("remove-me");
+    const deleteElement = document.querySelector("#remove-me");
+
+    // console.log(newTodo);
+
+    newTodo.textContent = "Give Chickens treats";
+    console.log(newTodo);
+    newTodo.classList.add("todo");
+    secondTodo.classList.add("todo");
+    thirdTodo.classList.add("todo");
+    console.log(newTodo);
+
+    bTag.textContent = " Dont Forget to lock the coop!";
+    secondTodo.textContent = "Order more la croix";
+    thirdTodo.textContent = "Feed Cats";
+
+    newImage.setAttribute("src", "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Grizzly_Giant_Mariposa_Grove.jpg/440px-Grizzly_Giant_Mariposa_Grove.jpg");
+    newImage.classList.add("image");
+
+    newTodo.append(bTag);
+
+    ul.append(newTodo, secondTodo);
+    
+    ul.prepend(thirdTodo);
+    
+    body.prepend(newImage);
+
+    // ul.removeChild(deleteElement);
+
+    deleteElement.remove();
+
+  </script>
+</body>
+
+</html>
