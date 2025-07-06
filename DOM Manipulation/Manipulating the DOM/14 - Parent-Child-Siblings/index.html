@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <section>
+    <h1>Here is a main heading!</h1>
+    <div>
+      <p>
+        Here is a paragraph inside a div!
+      </p>
+      <ul>
+        <li>
+          First list item in a div
+          <button>X</button>
+          <!-- I am a comment! -->
+        </li>
+        <li>Second list item in a div</li>
+      </ul>
+    </div>
+    <div>Here is the second div!</div>
+  </section>
+    <script>
+        const div = document.querySelector("div");
+        const parent = div.parentElement;
+        const ul = document.querySelector("ul");
+
+        console.log(parent);
+        console.log(parent.parentElement);
+
+        console.log(ul.children);
+        console.log(document.body.children);
+    </script>
+</body>
+
+</html>
