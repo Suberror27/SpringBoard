@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Manipulating Classes</title>
+  <style>
+    .todo {
+        font-size: 2rem;
+        color: purple;
+        /* background-color: #bbb */
+        transition: all 0.2s;
+    }
+
+    .todo:hover {
+        background-color: rgba(0,0,0,0.1);
+    }
+
+    .completed {
+        color: gray;
+        text-decoration: line-through;
+    }
+
+  </style>
+
+</head>
+
+<body>
+  <h1 class="big">HAPPY</h1>
+  <h2>Todos</h2>
+  <ul>
+    <li class="todo">Feed Chickens</li>
+    <li class="todo">Gather Chicken Eggs</li>
+    <li class="todo">Eat Chickens (just kidding)</li>
+  </ul>
+  <script>
+    const todo = document.querySelector("li");
+    console.log(todo.getAttribute("class"));
+    
+    todo.setAttribute("class", "completed"); //This again overwrites the existing class with the new one
+
+    todo.className += ' todo';
+
+    console.log(todo.classList);
+
+    todo.classList.add("hello");
+    console.log(todo.classList);
+
+    todo.classList.remove("completed");
+    todo.classList.remove("completed");
+    console.log(todo.classList);
+
+    todo.classList.toggle("completed");
+    todo.classList.toggle("completed");
+     console.log(todo.classList);
+
+     function toggleCompleted() {
+        const todos = document.querySelectorAll("li");
+
+        for(let li of todos) {
+            li.classList.toggle("completed");
+        }
+     }
+
+  </script>
+</body>
+
+</html>
