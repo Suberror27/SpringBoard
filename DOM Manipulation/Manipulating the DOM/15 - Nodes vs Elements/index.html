@@ -16,9 +16,7 @@
                 Here is a paragraph inside a div!
             </p>
             <ul>
-                <li>
-                First list item in a div
-                <button>X</button>
+                <li value="1">First list item in a div<button>X</button><span style="display: none;">In a Span</span>
                 <!-- I am a comment! -->
                 </li>
                 <li>Second list item in a div</li>
@@ -30,12 +28,13 @@
     <script>
         const li = document.querySelector("li");
 
-        console.log(li.childNodes);
-        console.log(li.children);
+        // console.log(li.childNodes);
+        // console.log(li.children);
 
-        console.log(li.innerHTML);
-        console.log(li.textContent);
-        console.log(li.innerText);
+        // console.log(li.innerHTML);
+        // console.log(typeof(li.getAttribute("value")));
+        console.log(li.parentElement)
+        // console.log(li.innerText);
     </script>
 </body>
 </html>
