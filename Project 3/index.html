@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator</title>
+    <link rel="stylesheet" href="./app.css" >
+</head>
+<body>
+    <main id="mainContainer">
+
+        <section id="header">
+            <div class="headerDiv">
+                <h1>Meme Generator By: Abraham Camargo</h1>
+                <h6>Fill out the form to start creating memes!</h6>
+            </div>
+        </section>
+
+        <section id="formContainer">
+            <form id="memeForm">
+                <div class="formInputDiv">
+                    <label for="imageUrl">Image URL</label>
+                    <input 
+                        id="imageUrl" 
+                        name="imageUrl" 
+                        type="text" 
+                        placeholder="What's the URL for your meme image?" 
+                        required
+                    >
+                </div>
+                <br />
+
+                <div class="formInputDiv">
+                    <label for="topText">Text On Top</label>
+                    <input 
+                        id="topText" 
+                        name="topText" 
+                        type="text" 
+                        placeholder="(Optional) What text do you want at the top of the meme?"
+                    >
+                </div>
+                <br />
+
+                <div class="formInputDiv">
+                    <label for="bottomText">Text On Bottom</label>
+                    <input 
+                        id="bottomText" 
+                        name="bottomText" 
+                        type="text" 
+                        placeholder="(Optional) What text do you want at the bottom of the meme?"
+                    >
+                </div>
+                <br />
+
+                <div class="formButtonContainer">
+                    <button id="submitMeme" type="submit">Add Meme</button>
+                </div>
+            </form>
+        </section>
+
+        <section id="memeContainer">
+            <div id="memeDivContainer">
+                
+            </div>
+        </section>
+
+    </main>
+    <script src="./app.js"></script>
+</body>
+</html>
