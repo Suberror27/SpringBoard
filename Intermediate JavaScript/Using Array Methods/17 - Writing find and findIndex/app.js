@@ -42,3 +42,7 @@ function myFindIndex(arr, callback) {
 console.log(myFindIndex(scores, (score, i, arr) => {
     return score !== 0 && score % 2 === 0;
 }));
+
+
+
+
