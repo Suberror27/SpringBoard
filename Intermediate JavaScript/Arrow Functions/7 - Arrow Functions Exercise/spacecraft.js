@@ -39,5 +39,10 @@ spacecraft.receiveMessage("This is a test!");
  * Observations:
  * TODO: Explain here.
  * Function inside the object logs Message received + message passed as argument as expected.
- * At first I tried console.log(spacecraft.receiveMessage("This is a test!")); which was logging the message but also logging undefined
+ * At first I tried console.log(spacecraft.receiveMessage("This is a test!")); which was logging the message but also logging undefined.
+ * Some explanation from GTP:
+ * 
+ * Arrow functions do not bind their own `this`. In this context, `this` inside `receiveMessage`
+ * would not refer to the `spacecraft` object. To access object properties via `this`, use a regular function.
+ * 
  */
