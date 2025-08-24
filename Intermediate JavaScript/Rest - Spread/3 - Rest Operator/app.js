@@ -31,7 +31,3 @@ const filterByType = (type, ...vals) => {
 };
 
 console.log(filterByType('boolean', 23, 27, true, false, true, true, false, 'Hello', 'Abraham'));
-
-function printStuff(a, ...rest) {
-    
-}
