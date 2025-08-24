@@ -45,3 +45,20 @@ console.log(collection[0][0]) // "REPLACED"
 // If you want a deep copy, where both the outer and inner arrays are duplicated, you can do something like:
 
 let deepCopy = collection.map(arr => [...arr]);
+
+///Andrew examples 8/24/2025
+// rest operator
+const arr = [1, 2,3,4,5];
+const obj = {
+  name: "Andrew",
+  age: 30,
+  bio: "What ever goes heerre"
+}
+
+const [first, second, ...rest] = arr;
+
+const newArr = [first, ...rest];
+
+const {name, ...restOfObj} = obj;
+console.log(rest, newArr);
+console.log(restOfObj);
